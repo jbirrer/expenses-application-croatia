@@ -1,16 +1,8 @@
-
-
-let grosi  = [1500, 750, 50, 
-  1100, 2000, 300,
-    40, 64, 180];
+let grosi  = [1500, 750, 50, 1100, 2000, 300, 40, 64, 180];
   
-let steffi = [1450,135, 342, 
-  80, 540, 160];
+let steffi = [1450,135, 342, 80, 540, 160];
   
-let tanja  = [960, 250, 210, 
-  120, 1950, 1090,
-    622];
-
+let tanja  = [960, 250, 210, 120, 1950, 1090, 622, 2040];
 
 let grositot = 0;
 let steffitot = 0;
@@ -20,23 +12,18 @@ for (var i = 0; i < grosi.length; i++) {
   grositot += grosi[i];
 }
 
-let grosiavg = grositot/grosi.length;
-
 console.log("Grosi Ausgaben in Kuna: " + grositot);
 
 for (var i = 0; i < steffi.length; i++) {
   steffitot += steffi[i];
 }
 
-let steffiavg = steffitot/steffi.length;
 console.log("Steffi Ausgaben in Kuna: " + steffitot);
-
 
 for (var i = 0; i < tanja.length; i++) {
   tanjatot += tanja[i];
 }
 
-let tanjaavg = tanjatot/tanja.length;
 console.log("Tanja Ausgaben in Kuna: " + tanjatot);
 
 grositot = Math.round(grositot * 0.14);
@@ -52,7 +39,6 @@ let avg = tot/3;
 avg = Math.round(avg);
 console.log("");
 console.log("Durchschnitt in Franken = " + avg);
-
 
 let get =0;
 let givex =0;
@@ -79,4 +65,5 @@ else{get = tanjatot - avg;
   givey = avg - grositot;
   console.log(givex + " von Steffi, und von Grosi "+ givey);
 }
+
 
